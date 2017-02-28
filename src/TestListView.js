@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ListView, View, Text } from 'react-native';
 
+// @dd TODO: use array of objects as dataSource
 export default class TestListView extends Component {
   constructor(props) {
     super(props);

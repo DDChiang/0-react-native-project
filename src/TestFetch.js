@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { ListView, View, Text } from 'react-native';
 
+// @DD TODO: must expand on this
+
 export default class TestFetch extends Component {
   constructor(props) {
     super(props);
@@ -19,6 +21,9 @@ export default class TestFetch extends Component {
     this.getMovies().done();
   }
 
+  /**
+  * new way
+  **/
   async getMovies() {
     try {
       let response = await fetch('https://facebook.github.io/react-native/movies.json');
@@ -30,6 +35,9 @@ export default class TestFetch extends Component {
     }
   }
 
+  /**
+  * old way
+  **/
   // getMovies() {
   //   return fetch('https://facebook.github.io/react-native/movies.json')
   //     .then((res) => {
